@@ -80,7 +80,7 @@ def plot_original_and_skeleton_and_overlay(image_name, image, skeleton, overlay)
 
     plt.tight_layout()
     os.makedirs("output", exist_ok=True)
-    image_name.replace(".jpg", ".png")
+    image_name = image_name.replace(".jpg", ".png")
     plt.savefig(f"output/{image_name}", bbox_inches='tight', dpi=300)
     plt.close()
 
